@@ -22,5 +22,5 @@ jobs:
         run: echo Repo is ${{ github.ref }} 
       - name: List
         run: |
-          - ls -la .
-          - tree
+          ls -la .
+          tree
