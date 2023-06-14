@@ -20,4 +20,4 @@ jobs:
       - name: Say It
         uses: ./actions
         with:
-          who-to-greet: "Mr. White"
+          who-to-greet: 'Mr. White'
