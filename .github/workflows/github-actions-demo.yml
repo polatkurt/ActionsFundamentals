@@ -10,4 +10,5 @@ on:
       - main
   schedule:
     - cron: '15 6 6 * *'
-  
+  workflow_dispatch:
+    
