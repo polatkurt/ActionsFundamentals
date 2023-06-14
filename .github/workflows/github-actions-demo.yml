@@ -11,4 +11,10 @@ on:
   schedule:
     - cron: '15 6 6 * *'
   workflow_dispatch:
-    
+jobs:
+  example:
+    name: Example Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say My Name
+        run: echo Say My Name
