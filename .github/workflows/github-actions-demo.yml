@@ -12,9 +12,13 @@ on:
     - cron: '15 6 6 * *'
   workflow_dispatch:
 jobs:
-  example:
+  Build:
     name: Example Job
     runs-on: ubuntu-latest
     steps:
-      - name: Say My Name
-        run: echo Say My Name
+      - name: Event
+        run: echo Event is ${{ github.event_name }} 
+      - name: Repo
+        run: echo Repo is ${{ github.ref }} 
+      - name: List
+        run: ls -la ${{ github.repository }}
