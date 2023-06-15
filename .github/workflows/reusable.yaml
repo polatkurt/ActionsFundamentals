@@ -1,0 +1,16 @@
+name: Reusable
+run-name: ubuntu-latest
+on: 
+  workflow_call:
+    inputs: 
+      whotogreet:
+        type: string
+        description: "naf"
+        default: 'World'
+jobs:
+  reusable-job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: SayIt
+        - run: echo 'Hello ${{ inputs.whotogreet }}'
+      
