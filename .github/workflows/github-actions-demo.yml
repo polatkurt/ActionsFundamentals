@@ -36,4 +36,5 @@ jobs:
       - name: Run
         run: echo huhu
         if: ${{ github.event_name == 'workflow_dispatch' }}
+    needs: Build
     
