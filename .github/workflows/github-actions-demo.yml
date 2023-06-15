@@ -11,6 +11,11 @@ on:
   schedule:
     - cron: '15 6 6 * *'
   workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        default: 'Test'
+        description: Select environment
 jobs:
   Build:
     name: Example Job
